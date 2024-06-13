@@ -1,0 +1,11 @@
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+combined_df['Amount_normalized'] = scaler.fit_transform(combined_df[['Amount']])
+---------------------
+print(predictions)
+predictions = np.array(predictions).reshape(-1, 1)
+mean = np.mean(combined_df['Amount_normalized'])
+print(mean)
+denormalized_values = scaler.inverse_transform(predictions)
+denormalized_values = denormalized_values + mean
+print(denormalized_values)
