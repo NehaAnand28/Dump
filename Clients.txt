@@ -1,44 +1,27 @@
-Retail Trade (NAICS 44-45)
-Amazon.com Inc.
-NAICS Code: 454110 (Electronic Shopping and Mail-Order Houses)
-Walmart Inc.
-NAICS Code: 452210 (Department Stores)
-The Home Depot, Inc.
-NAICS Code: 444110 (Home Centers)
-Costco Wholesale Corporation
-NAICS Code: 452310 (Warehouse Clubs and Supercenters)
-Target Corporation
-NAICS Code: 452112 (Discount Department Stores)
-Manufacturing (NAICS 31-33)
-Apple Inc.
-NAICS Code: 334111 (Electronic Computer Manufacturing)
-Tesla, Inc.
-NAICS Code: 336111 (Automobile Manufacturing)
-The Boeing Company
-NAICS Code: 336411 (Aircraft Manufacturing)
-3M Company
-NAICS Code: 339999 (All Other Miscellaneous Manufacturing)
-General Electric Company
-NAICS Code: 335999 (All Other Miscellaneous Electrical Equipment and Component Manufacturing)
-Information (NAICS 51)
-Alphabet Inc. (Google)
-NAICS Code: 519130 (Internet Publishing and Broadcasting and Web Search Portals)
-Meta Platforms, Inc. (Facebook)
-NAICS Code: 519130 (Internet Publishing and Broadcasting and Web Search Portals)
-Microsoft Corporation
-NAICS Code: 511210 (Software Publishers)
-Netflix, Inc.
-NAICS Code: 512120 (Motion Picture and Video Distribution)
-Adobe Inc.
-NAICS Code: 511210 (Software Publishers)
-Health Care and Social Assistance (NAICS 62)
-UnitedHealth Group Incorporated
-NAICS Code: 524114 (Direct Health and Medical Insurance Carriers)
-CVS Health Corporation
-NAICS Code: 621111 (Offices of Physicians, Except Mental Health Specialists)
-Anthem, Inc.
-NAICS Code: 524114 (Direct Health and Medical Insurance Carriers)
-Centene Corporation
-NAICS Code: 524114 (Direct Health and Medical Insurance Carriers)
-Cigna Corporation
-NAICS Code: 524114 (Direct Health and Medical Insurance Carriers)
+Retail Trade
+1. Amazon.com Inc.
+2. Walmart Inc.
+3. The Home Depot, Inc.
+4. Costco Wholesale Corporation
+5. Target Corporation
+
+Manufacturing
+1. Apple Inc.
+2. Tesla, Inc.
+3. The Boeing Company
+4. 3M Company
+5. General Electric Company
+
+Information
+1. Alphabet Inc. (Google)
+2. Meta Platforms, Inc. (Facebook)
+3. Microsoft Corporation
+4. Netflix, Inc.
+5. Adobe Inc.
+
+Health Care and Social Assistance
+1. UnitedHealth Group Incorporated
+2. CVS Health Corporation
+3. Anthem, Inc.
+4. Centene Corporation
+5. Cigna Corporation
