@@ -1,0 +1,29 @@
+from pymongo import MongoClient
+from datetime import datetime, timedelta
+
+# Connect to MongoDB
+client = MongoClient('mongodb://localhost:27017/')
+db = client['your_database_name']
+collection = db['your_collection_name']
+
+# Fetch all transactions
+transactions = list(collection.find())
+
+# Ensure we have the right number of transactions
+assert len(transactions) == 96851, "The number of transactions is not 96851."
+
+# Initialize the start date
+start_date = datetime(2023, 1, 1)  # or any start date you want
+days_to_assign = 365
+transactions_per_day = 265
+
+# Assign dates to each transaction
+for i, transaction in enumerate(transactions):
+    date_to_assign = start_date + timedelta(days=(i // transactions_per_day))
+    transaction['date'] = date_to_assign
+
+# Update transactions back in the database
+for transaction in transactions:
+    collection.update_one({'_id': transaction['_id']}, {'$set': {'date': transaction['date']}})
+
+print("Dates assigned to transactions successfully.")
