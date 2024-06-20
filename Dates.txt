@@ -26,4 +26,18 @@ for i, transaction in enumerate(transactions):
 for transaction in transactions:
     collection.update_one({'_id': transaction['_id']}, {'$set': {'date': transaction['date']}})
 
+# Prepare bulk operations
+bulk_operations = []
+for i, transaction in enumerate(transactions):
+    date_to_assign = start_date + timedelta(days=(i // transactions_per_day))
+    bulk_operations.append(
+        UpdateMany({'_id': transaction['_id']}, {'$set': {'date': date_to_assign}})
+    )
+
+# Execute bulk operations in batches
+batch_size = 1000  # Adjust based on memory and performance considerations
+for i in range(0, len(bulk_operations), batch_size):
+    batch = bulk_operations[i:i + batch_size]
+    collection.bulk_write(batch)
+
 print("Dates assigned to transactions successfully.")
